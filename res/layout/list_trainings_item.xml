@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<FrameLayout 
+
+	android:id="@+id/mainlayout" 
+	android:layout_width="fill_parent" 
+	android:orientation="vertical" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:background="#ccc" 
+	android:layout_height="70px">
+
+	<ImageView android:layout_height="70px" android:layout_width="fill_parent" android:src="@drawable/trainings_list_item_bck" android:scaleType="fitEnd" />
+	<ImageView android:layout_height="70px" android:layout_width="fill_parent" android:src="@drawable/trainings_list_item_bck" android:scaleType="matrix"/>
+	
+	<ImageView 
+		android:layout_height="70px" 
+		android:layout_width="fill_parent" 
+		android:src="@drawable/trainings_list_item_gray_box" 
+		android:scaleType="fitEnd"
+		android:layout_gravity="right"/>
+	
+	<LinearLayout 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:layout_gravity="left|center_vertical"
+		android:orientation = "horizontal"
+		android:layout_marginLeft="6px">
+		
+		<TextView  
+		    android:id="@+id/list_item_num"
+		    style="@style/darkGray20dp"
+		    android:layout_gravity="bottom" 
+		    android:text="1" 
+		    android:layout_height="wrap_content" 
+		    android:layout_width="wrap_content" >
+	    </TextView>
+	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:layout_gravity="left"
+		android:orientation = "vertical"
+		android:layout_marginLeft="40px"		
+		android:layout_marginTop="6px">    
+	
+	    <TextView 
+		    android:id="@+id/name_entry"
+		    style="@style/darkGray20dp"
+		    android:layout_gravity="top|left"	   
+		    android:text="NAME" 
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content" 		    
+		    android:maxLines="1">
+	    </TextView>
+	 
+	    <TextView 
+	    	android:id="@+id/description_entry"
+	    	style="@style/lightGray16dp" 
+	    	android:text="DESC" 
+	    	android:typeface="sans" 
+	    	android:textStyle="italic" 
+	    	android:textColor="#757575" 
+		    android:layout_gravity="bottom|left" 
+		    android:layout_height="wrap_content" 
+	    	android:layout_width="wrap_content"
+	    	android:textSize="18dp" android:maxLines="2">
+	    </TextView>	 
+	</LinearLayout>    
+	    
+	<LinearLayout
+			android:layout_height="70px" 
+			android:layout_width="90px"
+			android:layout_gravity="right"
+			android:orientation = "vertical"
+			android:paddingRight="15dp">    
+		
+	    <TextView 
+		    android:id="@+id/workoutsInTraining"
+		    android:layout_marginTop="8px"
+		    android:layout_gravity="right|center" 
+		    android:layout_height="wrap_content" 
+		    android:layout_width="wrap_content" 
+		    android:textStyle="normal" 
+		    android:textColor="#FFF" 
+		    android:text="15" 
+		    android:textSize="20dp">
+	    </TextView>	  
+	      	   
+		<TextView 
+		    android:id="@+id/duration"
+		    android:layout_marginTop="8px"
+		    android:layout_gravity="right|center" 
+		    
+		    android:layout_height="wrap_content" 
+		    android:layout_width="wrap_content" 
+		    
+		    android:textStyle="normal" android:textColor="#FFF" 
+		    android:text="2min" 
+		    android:textSize="20dp">
+	    </TextView>
+
+	</LinearLayout>
+	
+
+	    
+	    
+	    
+    
+</FrameLayout>
+
+
+
+
+

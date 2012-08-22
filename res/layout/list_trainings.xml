@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_height="wrap_content" 
+  android:layout_width="wrap_content"
+  android:background="#139b04">
+
+    <TextView 
+    	android:id="@+id/textView1" 
+    	android:layout_width="match_parent" 
+    	android:layout_height="wrap_content" 
+    	android:textColor="#424141" 
+    	android:textSize="24dp" 
+    	android:text="All trainings" 
+    	android:shadowColor="#f4f4f4" 
+    	android:shadowDx="1" 
+    	android:shadowDy="1"
+    	android:shadowRadius="2"
+    	android:paddingTop="5dp" 
+    	android:paddingBottom="5dp" 
+    	android:paddingLeft="10dp">
+    </TextView> 
+    	
+    
+    <ListView 
+    	android:id="@android:id/android:list" 
+    	android:layout_height="match_parent" 
+    	android:layout_width="match_parent">
+    </ListView>
+    
+    
+    
+ 
+
+</LinearLayout>

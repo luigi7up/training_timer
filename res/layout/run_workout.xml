@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" 
+  	android:layout_width="fill_parent">
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:weightSum="1" 
+  android:orientation="vertical" 
+  android:layout_height="wrap_content" 
+  android:layout_width="fill_parent" >
+    
+    <TextView  
+    	android:id="@+id/workout_name" 
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content" 
+    	android:text="Name of the workout" 
+    	android:textSize="22dp">
+    </TextView>
+    
+
+    <TextView  
+    	android:id="@+id/workout_description" 
+    	android:text="Description text of the workout lorem ipsum dolor jebote sve mi je bla bla" 
+    	android:textSize="18dp" 
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content">
+    </TextView>
+    
+    
+    <training.timer.CounterClockView 
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:id="@+id/counter_clock_surface"
+    	android:layout_width="180px" 
+    	android:layout_height="180px">
+    </training.timer.CounterClockView>
+    
+    <TextView  
+    	android:id="@+id/timer_text"  
+    	android:textSize="18dp" 
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content">
+    
+    </TextView>
+        <TextView  
+    	android:id="@+id/next_workout"  
+    	android:textSize="18dp" 
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content">
+    </TextView>    
+   
+    <Button 
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:id="@+id/pause_resume"
+    	android:text="Pause/Resume" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content">
+    </Button>
+  
+    
+</LinearLayout>
+</ScrollView>

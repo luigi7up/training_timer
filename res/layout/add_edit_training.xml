@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" 
+  android:weightSum="1" 
+  android:orientation="vertical" android:background="#DDDDDD">
+  
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView1" android:text="Training name"></TextView>
+    <EditText android:layout_width="match_parent" android:id="@+id/trainingName" android:layout_height="wrap_content" android:layout_below="@+id/textView1" android:layout_marginTop="10dp" android:hint="training name..." android:maxLength="30" android:capitalize="words">
+
+        <requestFocus />
+
+    </EditText>
+    
+    <TextView android:layout_width="wrap_content" android:id="@+id/textView2" android:text="Short description" android:layout_height="wrap_content"></TextView>
+    <EditText android:hint="describe the training..." android:inputType="textMultiLine" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_above="@+id/cancel" android:id="@+id/trainingDescription" android:layout_width="match_parent" android:layout_height="80dp" android:maxLength="50" android:maxLines="2"></EditText>
+    
+    <Button android:layout_height="wrap_content" android:text="Save" android:id="@+id/save" android:layout_width="match_parent"></Button>
+    <Button android:layout_height="wrap_content" android:text="Cancel" android:id="@+id/cancel" android:layout_width="match_parent"></Button>
+    
+    
+    
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2edd1b">
+    <Button 
+    	android:id="@+id/listTrainings" 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content"
+    	android:layout_marginTop="5dp"
+    	android:background="@drawable/trainings_button" 
+    	android:gravity="left|center_vertical">
+    </Button>
+    
+    <Button 
+	    android:id="@+id/addTraining" 
+	    android:layout_height="wrap_content" 
+	    android:gravity="center_vertical|left" 
+	    android:background="@drawable/add_new_button" 
+	    android:layout_width="wrap_content">
+    </Button>
+    
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" 
+  	android:layout_width="fill_parent">
+  	
+    
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:weightSum="1">
+    
+
+    <TextView 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/TextView01" 
+        android:text="Workout Name">
+    </TextView>
+
+    <AutoCompleteTextView 
+        android:id="@+id/workoutName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@+id/workoutDescription" 
+        android:singleLine="true"
+        android:layout_weight="1">
+    </AutoCompleteTextView>
+        
+	
+    
+    <TextView 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/textView1" 
+        android:text="Workout Description">
+    </TextView>
+    
+    <EditText 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/workoutDescription" 
+        android:hint="workout description">
+    </EditText>
+    
+    <TextView 
+        android:id="@+id/textView2" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="Type">
+    </TextView>
+       
+    <Spinner 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" 
+    	android:id="@+id/workoutType"
+    	android:drawSelectorOnTop="true"
+        android:entries="@array/workout_type_array"/>
+
+    <TextView 
+        android:id="@+id/textView3" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="Time in seconds:">
+    </TextView>
+    
+     <training.timer.NumberPicker
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/workoutDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </training.timer.NumberPicker> 
+    
+         
+<!--       
+    <RelativeLayout 
+        android:layout_width="match_parent" 
+        android:id="@+id/relativeLayout1" 
+        android:layout_height="82dp">
+        
+        
+        <TextView 
+            android:layout_width="wrap_content" 
+            android:id="@+id/TextView02" 
+            android:layout_height="wrap_content" 
+            android:text="Duration" 
+            android:layout_alignParentTop="true" 
+            android:layout_alignParentLeft="true">
+        </TextView>
+        <EditText 
+            android:layout_width="72dp" 
+            android:layout_height="wrap_content" 
+            android:id="@+id/workoutDuration" 
+            android:layout_below="@+id/TextView02" 
+            android:layout_alignParentLeft="true">
+        </EditText>
+        
+        <TextView 
+            android:layout_width="wrap_content" 
+            android:id="@+id/textView4" 
+            android:layout_height="wrap_content" 
+            android:text="seconds" 
+            android:layout_alignBaseline="@+id/workoutDuration" 
+            android:layout_alignBottom="@+id/workoutDuration" 
+            android:layout_toRightOf="@+id/workoutDuration" 
+            android:layout_marginLeft="29dp">
+        </TextView>
+        
+    </RelativeLayout>
+    
+-->
+
+
+
+    
+    
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/workoutSave" android:text="save"></Button>
+
+</LinearLayout>
+
+</ScrollView>
