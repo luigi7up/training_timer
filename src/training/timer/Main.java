@@ -18,7 +18,7 @@ public class Main extends Activity implements OnClickListener {
 	private Button addTraining;
 	private Button listTrainings;
 	
-	
+	//MASTER SIN BUTTON
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
