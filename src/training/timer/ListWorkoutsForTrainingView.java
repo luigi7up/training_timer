@@ -95,7 +95,6 @@ public class ListWorkoutsForTrainingView extends ListActivity{
             return false;
         }
 		
-		
 		//Get the ID of the item in the list adapter!!! It is not a position in a list
         long id = getListAdapter().getItemId(info.position);        
 
@@ -110,7 +109,6 @@ public class ListWorkoutsForTrainingView extends ListActivity{
         		return true;
         	
         	case R.id.delete:
-	
 		          deleteWorkout(id); //ID of item should be passed to method deleteitem
 		          
 		          //refresh cursor and list

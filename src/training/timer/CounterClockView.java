@@ -45,8 +45,7 @@ public class CounterClockView extends View {
 
     @Override
     public void onDraw(Canvas canvas) {
-    	
-    	
+
     	//Size of the circle 
     	rect.set(20, 20, 150, 150);
     	rect2.set(20, 20, 150, 150);

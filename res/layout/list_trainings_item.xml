@@ -1,32 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="#ccc"
+    android:orientation="vertical" >
 
-
-
-<FrameLayout 
-
-	android:id="@+id/mainlayout" 
-	android:layout_width="fill_parent" 
-	android:orientation="vertical" 
-	xmlns:android="http://schemas.android.com/apk/res/android" 
-	android:background="#ccc" 
-	android:layout_height="70px">
-
-	<ImageView android:layout_height="70px" android:layout_width="fill_parent" android:src="@drawable/trainings_list_item_bck" android:scaleType="fitEnd" />
-	<ImageView android:layout_height="70px" android:layout_width="fill_parent" android:src="@drawable/trainings_list_item_bck" android:scaleType="matrix"/>
+	<ImageView android:layout_height="70dp" android:layout_width="fill_parent" android:src="@drawable/trainings_list_item_bck" android:scaleType="fitEnd" />
 	
-	<ImageView 
-		android:layout_height="70px" 
-		android:layout_width="fill_parent" 
-		android:src="@drawable/trainings_list_item_gray_box" 
-		android:scaleType="fitEnd"
-		android:layout_gravity="right"/>
+	<!-- <ImageView android:layout_height="70dp" android:layout_width="fill_parent" android:src="@drawable/trainings_list_item_bck" android:scaleType="matrix"/>  -->
+	
+	<ImageView
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent"
+	    android:layout_gravity="right"
+	    android:scaleType="fitEnd"
+	    android:src="@drawable/trainings_list_item_gray_box" />
 	
 	<LinearLayout 
 		android:layout_height="wrap_content" 
 		android:layout_width="wrap_content"
 		android:layout_gravity="left|center_vertical"
 		android:orientation = "horizontal"
-		android:layout_marginLeft="6px">
+		android:layout_marginLeft="6dp">
 		
 		<TextView  
 		    android:id="@+id/list_item_num"
@@ -43,8 +39,8 @@
 		android:layout_width="wrap_content"
 		android:layout_gravity="left"
 		android:orientation = "vertical"
-		android:layout_marginLeft="40px"		
-		android:layout_marginTop="6px">    
+		android:layout_marginLeft="40dp"		
+		android:layout_marginTop="12dp">    
 	
 	    <TextView 
 		    android:id="@+id/name_entry"
@@ -71,15 +67,15 @@
 	</LinearLayout>    
 	    
 	<LinearLayout
-			android:layout_height="70px" 
-			android:layout_width="90px"
+			android:layout_height="70dp" 
+			android:layout_width="90dp"
 			android:layout_gravity="right"
 			android:orientation = "vertical"
 			android:paddingRight="15dp">    
 		
 	    <TextView 
 		    android:id="@+id/workoutsInTraining"
-		    android:layout_marginTop="8px"
+		    android:layout_marginTop="8dp"
 		    android:layout_gravity="right|center" 
 		    android:layout_height="wrap_content" 
 		    android:layout_width="wrap_content" 
@@ -91,7 +87,7 @@
 	      	   
 		<TextView 
 		    android:id="@+id/duration"
-		    android:layout_marginTop="8px"
+		    android:layout_marginTop="8dp"
 		    android:layout_gravity="right|center" 
 		    
 		    android:layout_height="wrap_content" 

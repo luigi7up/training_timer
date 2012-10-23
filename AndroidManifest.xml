@@ -8,39 +8,23 @@
 
 	     <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
 	        <activity android:name=".Main"
-	                  android:label="@string/app_name">
-	            
+	                  android:label="@string/app_name">	            
 	        </activity>
 	        
-	        <activity 
-	            android:name="ListTrainingsView" 
-	            android:configChanges="keyboardHidden|orientation">
-	            
+	        <activity android:name="ListTrainingsView" android:configChanges="keyboardHidden|orientation">	            
+	            <!-- This is the first Action to be shown when it starts -->
 	            <intent-filter>
 	                <action android:name="android.intent.action.MAIN" />
 	                <category android:name="android.intent.category.LAUNCHER" />
-	            </intent-filter>
-	            
+	            </intent-filter>	         
 	        </activity>
-	        
 
-	        <activity android:name="ListWorkoutsForTrainingView"></activity>
-	        
+	        <activity android:name="ListWorkoutsForTrainingView"></activity>	        
 	        <activity android:name="AddTrainingView"></activity>
-	        <activity android:name="EditTrainingView"></activity>
+	        <activity android:name="EditTrainingView"></activity>	        
+	        <activity android:name="AddWorkoutsView"></activity>	        
+	        <activity android:name="RunTrainingWorkoutsView" android:configChanges="keyboardHidden|orientation"></activity>
 	        
-	        <activity android:name="AddWorkoutsView"></activity>
-	        
-	        <activity 
-	        	android:name="RunTrainingWorkoutsView" 
-	        	android:configChanges="keyboardHidden|orientation">
-	        	
-	        </activity>
-	        
-	        
-	        
-	        
-	
 	    </application>
 
 </manifest>

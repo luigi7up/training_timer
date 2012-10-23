@@ -91,11 +91,11 @@ public class RunTrainingWorkoutsView extends Activity implements OnClickListener
 		
 		//Find and Set next_workout_id, duration of the current etc.
 		while (cursor.isAfterLast() == false) {
-        	//Find next workout in cursor
+        	
+			//Find next workout in cursor
         	long currentCursorID = cursor.getLong(cursor.getColumnIndex(BaseColumns._ID));
-        	if(currentCursorID  == workout_id)
-	
-        	{
+        	
+        	if(currentCursorID  == workout_id){
         		//We are in current workout row in cursor so get the details for it
         		workout_total = cursor.getLong(cursor.getColumnIndex("duration"));	
         		txtWorkoutName.setText(cursor.getString(cursor.getColumnIndex("name")));
@@ -136,12 +136,11 @@ public class RunTrainingWorkoutsView extends Activity implements OnClickListener
 			public void onTick(long millisUntilFinished) {
 
 				//Resume counter from current_second if current second isn't 0	
-				if(current_second != 0) millisUntilFinished = current_second*1000;
+				if(current_second != 0) millisUntilFinished = current_second * 1000;
 			
-				//int secondsLeft = (int) (millisUntilFinished/1000)-1; 
-
 				if(current_second == workout_total) counterClockView.counterArcAngle = 360;
-				else counterClockView.counterArcAngle = (current_second)*(360/workout_total);
+			
+				else counterClockView.counterArcAngle = (current_second*360/workout_total);
 
 				//View has to be invalidated on every tick
 				//counterClockView.invalidate();
