@@ -1,4 +1,4 @@
-package training.timer;
+package training.timer.model;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
+import training.timer.R;
 
 
 /**
@@ -38,33 +39,16 @@ public class TrainingsListCursorAdapter extends SimpleCursorAdapter{
 		
 	}//contructor
 
-/*
-	@Override
-	public View newView(Context context, Cursor cursor, ViewGroup parent){
 
-		Cursor c = getCursor();
-
-		final LayoutInflater inflater = LayoutInflater.from(context);
-		View v = inflater.inflate(layout, parent, false);
-	
-		return v;
-		
-	}
-*/	
-	
     @Override
     public void bindView(View v, Context context, Cursor c) {
 
-    	String name = c.getString(c.getColumnIndex("name"));
-    	String description = c.getString(c.getColumnIndex("description"));
-    	String order = String.valueOf(c.getPosition()+1);
+    	String name         = c.getString(c.getColumnIndex("name"));
+    	String description  = c.getString(c.getColumnIndex("description"));
+    	String order        = String.valueOf(c.getPosition()+1);
     	
     	String duration = minutesForSeconds(c.getString(c.getColumnIndex("duration")));
-    	
     	String workoutsInTraining = c.getString(c.getColumnIndex("num_of_workouts"));
-
-
-    	
   
     	//Set the values for layout elements
         TextView name_text = (TextView) v.findViewById(R.id.name_entry);

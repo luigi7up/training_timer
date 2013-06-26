@@ -8,7 +8,8 @@
   android:weightSum="1" 
   android:orientation="vertical" 
   android:layout_height="wrap_content" 
-  android:layout_width="fill_parent" >
+  android:layout_width="fill_parent"
+  android:background="#fff">
     
     <TextView  
     	android:id="@+id/workout_name" 
@@ -28,12 +29,13 @@
     </TextView>
     
     
-    <training.timer.CounterClockView 
+    <training.timer.view.CounterClockView
     	xmlns:android="http://schemas.android.com/apk/res/android"
     	android:id="@+id/counter_clock_surface"
     	android:layout_width="180px" 
-    	android:layout_height="180px">
-    </training.timer.CounterClockView>
+    	android:layout_height="180px"
+        android:layout_gravity="center_horizontal">
+    </training.timer.view.CounterClockView>
     
     <TextView  
     	android:id="@+id/timer_text"  

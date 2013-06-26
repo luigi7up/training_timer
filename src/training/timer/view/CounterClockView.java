@@ -1,4 +1,4 @@
-package training.timer;
+package training.timer.view;
 
 
 import android.content.Context;

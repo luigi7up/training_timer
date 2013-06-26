@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package training.timer;
+package training.timer.view;
 
 import android.content.Context;
 import android.util.AttributeSet;

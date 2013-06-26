@@ -67,12 +67,12 @@
         android:text="Time in seconds:">
     </TextView>
     
-     <training.timer.NumberPicker
+     <training.timer.view.NumberPicker
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/workoutDuration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-    </training.timer.NumberPicker> 
+    </training.timer.view.NumberPicker>
     
          
 <!--       

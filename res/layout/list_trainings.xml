@@ -4,16 +4,16 @@
   android:orientation="vertical"
   android:layout_height="wrap_content" 
   android:layout_width="wrap_content"
-  android:background="#139b04">
+  android:background="#3f3f3f">
 
     <TextView 
     	android:id="@+id/textView1" 
     	android:layout_width="match_parent" 
     	android:layout_height="wrap_content" 
-    	android:textColor="#424141" 
-    	android:textSize="24dp" 
+    	android:textColor="#fff"
+    	android:textSize="18dp"
     	android:text="All trainings" 
-    	android:shadowColor="#f4f4f4" 
+    	android:shadowColor="#000"
     	android:shadowDx="1" 
     	android:shadowDy="1"
     	android:shadowRadius="2"

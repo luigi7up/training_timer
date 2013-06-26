@@ -1,17 +1,14 @@
 package training.timer;
 
 import android.app.Activity;
-import android.content.ContentValues;
-import android.content.Context;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.provider.BaseColumns;
 
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import training.timer.view.AddTrainingView;
+import training.timer.view.ListTrainingsView;
 
 public class Main extends Activity implements OnClickListener {
     /** Called when the activity is first created. */

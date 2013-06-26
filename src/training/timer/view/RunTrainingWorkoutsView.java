@@ -1,26 +1,21 @@
-package training.timer;
+package training.timer.view;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.graphics.Color;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.os.Handler;
 import android.provider.BaseColumns;
 import android.util.Log;
-import android.view.SurfaceView;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ListAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
+import training.timer.model.DatabaseHelper;
+import training.timer.R;
 
 public class RunTrainingWorkoutsView extends Activity implements OnClickListener{
 	

@@ -1,55 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout 
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:background="#fff">
 
-	android:id="@+id/mainlayout" 
-	android:layout_width="fill_parent"
-	android:layout_height="70dp"
-	
-	android:orientation="vertical" 
-	xmlns:android="http://schemas.android.com/apk/res/android" 
-	android:background="#ccc" >
-	
-	<ImageView
-	    android:layout_width="fill_parent"
-	    android:layout_height="fill_parent"
-	    android:layout_gravity="top"
-	    android:scaleType="fitEnd"
-	    android:src="@drawable/trainings_list_item_bck" />
 
-	<!-- <ImageView android:layout_height="70dp" android:layout_width="fill_parent" android:src="@drawable/trainings_list_item_bck" android:scaleType="matrix"/> -->
-	
-	
-	
-	<TextView
-		android:id="@+id/workout_order"
-		style="@style/darkGray20dp"
-		android:layout_height="wrap_content"
-		android:layout_width="30dp" />
-		
-		
+<!--    <TextView
+            android:id="@+id/workout_order"
+            style="@style/blackWithShadow"
+            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:text="2" /> -->
+
 	<LinearLayout
-		xmlns:android="http://schemas.android.com/apk/res/android" 
-		android:layout_width="fill_parent"
+		android:layout_width="0dp"
+        android:layout_weight="70"
 		android:layout_height="70dp"		
 		android:orientation="vertical">
-		
-		<TextView
-			android:id="@+id/workout_name"
-			style="@style/darkGray20dp"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content" />
+
+        <TextView
+                android:id="@+id/workout_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/darkGray20dp"
+                android:text="12s" />
 		
 		<TextView
 			android:id="@+id/workout_description"
-			style="@style/lightGray16dp" 
+			style="@style/blackWithShadow"
 			android:layout_width="wrap_content"
-			android:layout_height="wrap_content" />
+			android:layout_height="wrap_content"
+            android:text="Workout description"/>
 	
 	</LinearLayout>	
-	
+	
+
 	<LinearLayout
-	    xmlns:android="http://schemas.android.com/apk/res/android"
-	    android:layout_width="fill_parent"
+        android:layout_width="0dp"
+        android:layout_weight="30"
 	    android:layout_height="fill_parent"
 	    android:orientation="vertical" >
 
@@ -57,13 +49,17 @@
 			android:id="@+id/workout_type"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			style="@style/darkGray20dp" />
-			
-		<TextView
-			android:id="@+id/workout_duration"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			style="@style/darkGray20dp" />
-	</LinearLayout>		
+			style="@style/blackWithShadow"
+            android:text="rest" />
 
-</FrameLayout>
+
+        <!--<TextView
+                android:id="@+id/workout_name"
+                style="@style/blackWithShadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Workout name"/>-->
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,4 +1,4 @@
-package training.timer;
+package training.timer.model;
 
 import android.content.Context;
 import android.database.SQLException;

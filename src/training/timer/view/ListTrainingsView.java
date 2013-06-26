@@ -2,11 +2,9 @@
  * Activity reads a table of all trainings in the DB and displays it to a user as a ListView
  * */
 
-package training.timer;
+package training.timer.view;
 
-import android.app.Activity;
 import android.app.ListActivity;
-import android.content.ContentValues;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.database.Cursor;
@@ -16,20 +14,16 @@ import android.provider.BaseColumns;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.Display;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.CursorAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.SimpleCursorAdapter;
-import android.widget.TextView;
 import android.widget.Toast;
+import training.timer.model.DatabaseHelper;
+import training.timer.R;
+import training.timer.model.TrainingsListCursorAdapter;
 
 public class ListTrainingsView extends ListActivity{
 

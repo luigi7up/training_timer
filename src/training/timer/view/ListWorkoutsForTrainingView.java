@@ -1,8 +1,6 @@
-package training.timer;
+package training.timer.view;
 
-import android.app.Activity;
 import android.app.ListActivity;
-import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -10,21 +8,17 @@ import android.os.Bundle;
 import android.provider.BaseColumns;
 import android.util.Log;
 import android.view.ContextMenu;
-import android.view.ContextMenu.ContextMenuInfo;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.CursorAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
-import android.widget.TextView;
 import android.widget.Toast;
+import training.timer.model.DatabaseHelper;
+import training.timer.R;
 
 public class ListWorkoutsForTrainingView extends ListActivity{
 
@@ -62,9 +56,9 @@ public class ListWorkoutsForTrainingView extends ListActivity{
 		startManagingCursor(cursor);
 		
 		listAdapter = new SimpleCursorAdapter(this,
-				R.layout.list_workouts_item, 
-				cursor, 
-				fields,
+				R.layout.list_workouts_item,
+                cursor,
+                fields,
 				new int[] { R.id.workout_name, R.id.workout_description,R.id.workout_type, R.id.workout_duration }
 		);
 		
